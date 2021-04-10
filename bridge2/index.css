@@ -1,0 +1,137 @@
+/*
+   EarTraining, a web application for people who want to train their ear for music 
+   Copyright (C) 2020  Emanuele De Santis
+   EarTraining is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   EarTraining is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+   You should have received a copy of the GNU Affero General Public License
+   along with EarTraining.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+@import "../MySite/topnav.css";
+@import "../MySite/leftnav.css";
+@import "logout.css";
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #F0E68C; /* giallo khaki */
+}
+
+.container {
+	display: flex; 	
+}
+	
+.rightnav { 
+	position: sticky; 
+	top: 0; 
+	width: 13%;
+	height: max-content; 
+	border: 0.2rem groove #1E90FF; /*DodgerBlue*/
+	background-color: #c8f2cf; /* verde chiaro */
+	border-radius: 0.2rem;
+}
+
+.menu-dx { 
+	margin: 1rem 0.3rem 2rem 0.3rem; /* su dx giù sx */ 
+	padding: 0;  
+	list-style: none;
+}
+
+.rightnav h3 {
+	text-align: center;
+	color: blue;
+}
+
+.menu-dx li {
+	position: relative;
+	color: red;
+}
+
+.menu-dx li ul {
+	position: absolute;
+	top: -1.2rem; /* bilancio per il padding-top */
+	text-align: center; 
+	display: none;	
+	right: 100%;
+	width: 20rem;
+	background-color: #c8f2cf; 
+	border-top: 0.2rem solid #1E90FF; /* dodger blue */
+	border-bottom: 0.2rem solid #1E90FF; /* dodger blue */
+	border-left: 0.2rem solid #1E90FF; /* dodger blue */
+	border-right: 0.5rem solid #c8f2cf; /* verde chiaro uguale al rightnav */
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 1.5rem; /* 1 per bilanciare il text-aligne del before, 0.5 per il border-right */
+	padding-right: 1rem;
+}
+
+.menu-dx li ul li {
+	list-style: none;
+	color: blue;
+	margin-left: 0; 
+} 
+
+.menu-dx li ul li::before {
+  content: "\266A";
+  color: #008b00; /* verde scuro */
+  font-weight: bold;
+  display: inline-block; 
+  width: 1rem;
+  margin-left: -1rem; 
+}
+
+.menu-dx li:hover {
+	color: blue;
+	text-align: center;
+	
+}
+
+.menu-dx li:hover ul {
+	display: inline-block;
+}
+
+.menu-dx .ultimo-ul {
+	position: absolute;
+	top: -4.5rem; /* bilancio per il padding-top */
+	text-align: center; 
+	display: none;	
+	right: 100%;
+	width: 20rem;
+	background-color: #c8f2cf; 
+	border-top: 0.2rem solid #1E90FF; /* dodger blue */
+	border-bottom: 0.2rem solid #1E90FF; /* dodger blue */
+	border-left: 0.2rem solid #1E90FF; /* dodger blue */
+	border-right: 0.5rem solid #c8f2cf; /* verde chiaro uguale al rightnav */
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 1rem; /* bilancio per il text-aligne a causa del before */
+	padding-right: -1rem; /* bilancio per il text-aligne a causa del before */
+}
+
+.menu-dx li ul a:hover {
+	color: red; 
+}
+
+.main {
+	width: 72%;
+	font-family: verdana;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	text-align: center;
+	color: red;
+}
+
+h1 > span > a {
+	text-decoration: none;
+	color: green;
+}
+

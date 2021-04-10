@@ -1,0 +1,486 @@
+<!-- 
+   EarTraining, a web application for people who want to train their ear for music 
+   Copyright (C) 2020  Emanuele De Santis
+   EarTraining is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   EarTraining is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+   You should have received a copy of the GNU Affero General Public License
+   along with EarTraining.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<?xml version = "1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>Bridge</title>
+<meta name="viewport" content="viewport">
+<link rel="shortcut icon" type="image/svg" href="icon.svg">
+<link rel="stylesheet" type="text/css" href="leftnav_pages.html.css">
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"> 
+</head>
+<body>
+	<div class="topnav">
+	<ul class="menu">
+		<li class="icons" id="stato"><a href="../index.php">&#x1f3e1;</a></li>
+		<li><a href="aboutme.html">About Me</a></li>
+		<li class="icons"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+		<li class="icons"><a href="#"><i class="fab fa-instagram"></i></a></li>
+		<li><a href="mailto:musicskills.altervista.org@gmail.com">Mail me</a></li>
+	</ul>
+	</div>
+	<div class="container">
+		<div class="leftnav">
+		<div class="menu-sx">
+			<div class="link"><a id="state" href="teoriamusicale.html">Teoria musicale</a></div>
+			<div class="hr-sx" id="hr1"></div>
+			<div class="link"><a href="temperamento.html">Temperamento</a></div>
+			<div class="hr-sx" id="hr2"></div>
+			<div class="link"><a href="armonia.html">Armonia</a></div>
+			<div class="hr-sx" id="hr3"></div>
+			<div class="link"><a href="../bridge3/ear_training_allenamento.php">Ear Training</a></div>
+			<div class="hr-sx" id="hr4"></div>
+		</div>
+		</div>
+		<div class="main">
+		<h1 class="center" id="teoriabase">Teoria di base</h1>
+		<p class="testo">Premetto che tutto ci&ograve; che &egrave; scritto in questa pagina fa riferimento all'attuale <a href="#tempeq">temperamento equabile</a>.
+		</p>
+		<h2 id="note">Le note</h2>
+		<p>Cominciamo a costruire il nostro sistema musicale da zero; per farlo iniziamo con il capire quali siano le sue componenti fondamentali, le note, e le relazioni tra di esse.
+		</p>
+		<p>Una <strong>nota musicale</strong> &egrave; un simbolo grafico che indentifica un suono; le note si scrivono sul <strong>pentagramma</strong>, 
+		ovvero un insieme di cinque righe (o linee) parallele che individuano quattro spazi, entrambi numerati in ordine crescente dal basso verso l'alto),
+		e il loro nome dipende dalla <strong>chiave</strong> utilizzata.
+		Per motivi prettamente storici, le note sono in tutto le seguenti dodici (spolier, sono sette soltanto da un punto di vista diatonico, tra un po' sar&agrave; pi&ugrave; chiaro):</p>
+		<p class="center"><strong class="blue">Do, Do&#9839; (Re&#9837;), Re, Re&#9839; (Mi&#9837;), Mi, Fa, Fa&#9839; (Sol&#9837;), Sol, Sol&#9839; (La&#9837;), La, La&#9839; (Si&#9837;), Si.</strong>
+		</p>
+		<img class="immagine" src="scalacromatica.png" alt="scala cromatica">
+		<p>La <strong>chiave</strong> &egrave; un simbolo che si mette ad inizio pentagramma avente lo scopo di assegnare il nome alle note in base alla loro posizione su di esso
+		secondo la seguente regola:
+		<strong>la nota collocata sul rigo sul quale &egrave; posizionata<sup>*</sup> la chiave, prende il nome della categoria di chiavi alla quale appartiene</strong>.
+		Tutte le altre note sono quindi derivate da questa, seguendo l'ordine precedentemente elencato, facendo attenzione al fatto che ogni rigo e ogni spazio fanno riferimento
+		alle note da un punto di vista diatonico.
+		<p><em>Non avendo ancora definito il concetto di grado, che verr&agrave; introdotto quando parleremo di scale, per ora diamo una definizione intuitiva, secondo la quale
+		l'aggettivo diatonica indica il selezionare unicamente le note indipendentemente dalle varie alterazioni (ad esempio &#9839; o &#9837;) che esse possano avere; 
+		ad esempio per scala diatonica di do si intende la semplice scala composta dalle note Do, Re, Mi, Fa, Sol, La, Si, Do.</em>
+		</p>
+		<p>Questo significa dire che, ad esempio leggendo in chiave di violino, data la nota sol (secondo rigo), 
+		la nota precedente sar&agrave; fa (primo spazio) e quella successiva sar&agrave; la (secondo spazio).
+		</p>
+		<p>Esistono sette chiavi principali, il cui nome fa riferimento alle tre estensioni vocali maschili pi&ugrave; le tre femminili 
+		con l'aggiunta della famosa chiave di violino, divise nelle seguenti tre categorie di chiavi:
+		</p>
+		<img class="immagine" src="chiavi.png" alt="chiavi">
+		<ol class="menu-numerato-ol">
+			<li><strong class="blue">Chiave di Sol<sub>3</sub></strong>, dove il sol &egrave; collocato alla terza ottava (termine spiegato nel paragrafo degli <a href="#intervalli">intervalli</a>).<br />
+			<sup><strong>*</strong></sup>La sua posizione fa riferimento alla rientranza presente all'interno della chiave.
+			<ul>
+				<li><strong>Chiave di violino</strong>: probabilmente la pi&ugrave; famosa, &egrave; posizionata sul secondo rigo, per cui le note l&igrave; poste prenderanno il nome di sol;</li>
+			</ul>
+			</li>
+			<li><strong class="blue">Chiave di Fa<sub>2</sub></strong>, dove il fa &egrave; collocato alla seconda ottava.<br />
+			<sup><strong>*</strong></sup>La sua posizione fa riferimento alla rientranza presente in alto.
+			<ul>
+				<li><strong>Chiave di basso</strong>: &egrave; la chiave che solitamente si trova all'interno del pentagramma in basso nelle partiture per pianoforte.
+				Si disegna a partire dal quarto rigo, per cui le note l&igrave; poste prenderanno il nome di fa;
+				</li>
+				<li><strong>Chiave di baritono</strong>: &egrave; posizionata sul terzo rigo, per cui le note l&igrave; poste prenderanno il nome di fa;</li>
+			</ul>
+			</li>
+			<li><strong class="blue">Chiave di Do<sub>3</sub></strong>, dove il do &egrave; collocato alla terza ottava.<br />
+			<sup><strong>*</strong></sup>La sua posizione fa riferimento alla rientranza  presente nel centro.
+			<ul>
+				<li><strong>Chiave di soprano</strong>: &egrave; posizionata sul primo rigo, per cui le note l&igrave; poste prenderanno il nome di do;</li>
+				<li><strong>Chiave di mezzosoprano</strong>: &egrave; posizionata sul secondo rigo, per cui le note l&igrave; poste prenderanno il nome di do;</li>
+				<li><strong>Chiave di contralto</strong>: &egrave; posizionata sul terzo rigo, per cui le note l&igrave; poste prenderanno il nome di do;</li>
+				<li><strong>Chiave di tenore</strong>: &egrave; posizionata sul quarto rigo, per cui le note l&igrave; poste prenderanno il nome di do.</li>
+			</ul>
+			</li>
+		</ol>
+		<h2 id="intervalli">Gli intervalli</h2>
+		<p>La distanza tra due suoni viene detta <strong>intervallo</strong>. Si possono distinguere due tipi di intervalli:
+		</p>
+		<ol>
+			<li>l'<strong>intervallo armonico</strong>, ovvero la distanza tra due note in verticale (una sopra l'altra);</li>
+			<li>l'<strong>intervallo melodico</strong>, ovvero la distanza tra due note in successione, che a sua volta pu&ograve; essere
+			<ul>
+				<li><strong>ascendente</strong> (la seconda nota ha altezza maggiore della prima);</li>
+				<li><strong>discendente</strong> (la seconda nota ha altezza minore della prima).</li>
+			</ul>
+			</li>
+		</ol>
+		<p>Si dice <strong>semitono</strong> il pi&ugrave; piccolo intervallo che intercorre tra due suoni.
+		Si possono definire due tipi di semitono:
+		</p>
+		<ol>
+			<li>il <strong>semitono diatonico</strong>, tra due note di nome diverso (ad esempio Do-Re&#9837;);</li>
+			<li>il <strong>semitono cromatico</strong>, tra due note di nome uguale (ad esempio Do-Do&#9839;).</li>
+		</ol>
+		<p>Due semitoni formano un <strong>tono</strong> (ad esempio Do-Re, Mi-Fa&#9839;). 
+		Quest'ultimo e il semitono sono quindi i due unici possibili intervalli tra due note adiacenti e sono le due "unit&agrave; di misura fondamentali" 
+		per descrivere le distanze in termini musicali.
+		</p>
+		<p>Ora che abbiamo introdotto queste due misure, vediamo di fare chiarezza sui simboli che a volte compaiono anteposti alle note:
+		questi prendono il nome di <strong>alterazioni</strong> e possono essere
+		</p>
+		<ul>
+			<li>ascendenti, ovvero
+			<ul>
+				<li><strong>diesis</strong> (<strong>&#9839;</strong>): innalza l'altezza del suono a cui &egrave; antemposto di un semitono</li>
+				<li><strong>doppio diesis</strong> (<img class="doppiodiesis" src="doppiodiesis.png" alt="doppio diesis">): 
+				innalza l'altezza del suono a cui &egrave; antemposto di due semitoni 
+				(che corrispondono ad un tono, ma in questo caso il suo utilizzo non &egrave; formalmente corretto);</li>
+			</ul>
+			</li>
+			<li>discendenti, ovvero
+			<ul>
+				<li><strong>bemolle</strong> (<strong>&#9837;</strong>): abbassa l'altezza del suono a cui &egrave; antemposto di un semitono;</li>
+				<li><strong>doppio bemolle</strong> (<strong>&#x1d12b;</strong>): abbassa l'altezza del suono a cui &egrave; antemposto di due semitoni;</li>
+			</ul>
+			</li>
+			<li>infine vi &egrave; il <strong>bequadro</strong> (<strong>&#9838;</strong>), un'alterazione che serve ad annullare quelle precedenti.</li>
+		</ul>
+		<p>Si pu&ograve; fare ancora un'altra distinzione tra le alterazioni, che riguarda la loro collocazione all'interno del pentagramma: esse possono essere
+		<ul>
+			<li><strong>in chiave</strong>, ossia poste subito dopo la chiave, e il loro effetto permane per tutta la durata del brano, salvo altre indicazioni;
+			lo scopo di avere o no delle alterazioni in chiave serve a determinare la <a href="#tonalita">tonalit&agrave;</a> del brano, 
+			concetto che verr&agrave; illustrato quando parleremo delle scale;
+			<li><strong>transitorie</strong>, ossia anteposte ad una nota.
+			Il loro effetto vale solamente dal punto in cui vengono applicate fino al termine della <a href="#battuta">battuta</a>.</li>
+		</ul>
+		<p>A questo punto approfondiamo il discorso sugli intervalli: un intervallo viene classificato tramite la coppia di attributi distanza-specie:
+		</p>
+		<ol>
+			<li>per <strong>distanza</strong> si intende la distanza tra due note, estremi compresi, espressa in numeri ordinali al femminile, calcolata diatonicamente.
+			<p>(Per ora ci basti ricodare quanto detto nel paragrafo precedente, ossia che per scala diatonica si intende la famosa scala formata dalle note Do, Re, Mi, Fa, Sol, 	La, Si, Do).<br />
+			Facciamo qualche esempio (come nel caso delle chiavi, anche ora i pedici accanto alle note indicano la loro ottava d'appartenenza, che ho scelto arbitrariamente per far capire
+			come si sta muovendo; il termine ottava viene chiarito nell'ultimo dei seguenti esempi):
+			</p>			
+			<ul>
+				<li>Do<sub>1</sub>-Mi<sub>1</sub> &egrave; un intervallo di terza in quanto, diatonicamente, contando gli estremi, le note comprese tra Do e Mi sono Do, Re e Mi, 3 in totale;</li>
+				<li>Do<sub>1</sub>-Fa<sub>1</sub> &egrave; un intervallo di quarta in quanto le note comprese tra Do e Fa sono Do, Re, Mi e Fa, 4 in totale;</li>
+				<li>Do<sub>1</sub>-La<sub>1</sub> &egrave; un intervallo di sesta in quanto le note comprese tra Do e La sono Do, Re, Mi, Fa, Sol e La, 6 in totale;</li>
+				<li>Do<sub>1</sub>-Do<sub>1</sub> (stessa altezza) invece si chiama ma unisono, ad indicare che stiamo parlando dello stesso suono;
+				<li>Do<sub>1</sub>-Do<sub>2</sub> (secondo Do a frequenza doppia del primo) &egrave; un intervallo di ottava in quanto le note comprese tra Do<sub>1</sub> e Do<sub>2</sub> sono 
+				Do, Re, Mi, Fa, Sol e La, Si e Do, 8 in totale.
+				<p>Gli intervalli compresi all'interno di un'ottava, ottava compresa, sono detti intervalli semplici; 
+				ovviamente si pu&ograve; andare anche oltre e definire intervalli di nona, di decima e cos&igrave; via, i quali prendono il nome di intervalli composti (da quelli semplici).
+				</p>
+				</li>
+			</ul>
+			</li>
+			<li>per <strong>specie</strong> si intende l'attributo che indica la composizione dell'intervallo in toni e semitoni.</li>
+		</ol>
+		<p>Prima di elencare i tipi di specie, diamo una definizione intuitiva di cosa siano la <a href="#consonanza">consonanza</a> e la <a href="#dissonanza">dissonanza</a>, 
+		due concetti trattati formalmente nella sezione del <a href="temperamento.html">temperamento</a>:
+		</p>
+		<ul>
+			<li>Un intervallo armonico si dice <strong>consonante</strong> se suona in modo "gradevole";</li>
+			<li>Un intervallo armonico si dice <strong>dissonante</strong> se suona in modo "sgradevole".</li>
+		</ul>
+		<p>A questo punto riprendiamo il discorso precedente: esistono cinque tipi principali di specie, suddivisi nel seguente modo:
+		</p>
+		<ul class="menu-numerato-ul">
+			<li>Consonanze melodiche perfette:
+			<ul>
+				<li><strong>Intervalli giusti</strong> (unisono, quarta<sup><strong>*</strong></sup>, quinta, ottava);</li>
+			</ul>
+			</li>
+			<li>Consonanze melodiche imperfette:
+			<ul>
+				<li><strong>Intervalli maggiori</strong> (seconda, terza, sesta, settima);</li>
+				<li><strong>Intervalli minori</strong> (seconda, terza, sesta, settima);</li>
+			</ul>
+			</li>
+			<li>Dissonanze:
+				<ul>
+					<li><strong>Intervalli aumentati</strong> (tutti gli intervalli);</li>
+					<li><strong>Intervalli diminuiti</strong> (tutti gli intervalli).</li>
+				</ul>
+			</li>
+		</ul>
+		<p><sup><strong>*</strong></sup>In realt&agrave; &egrave; concettualmente errato affermare che la quarta giusta sia una consonanza melodica perfetta, poich&eacute;	 pu&ograve; essere 
+		consonante o addirittura dissonante a seconda del contesto; vista l'ambivalenza la quarta giusta va considerata come dissonanza 
+		(questo argomento verr&agrave; affrontato pi&ugrave; in dettaglio nella sezione <a href="armonia.html">armonia</a>).
+		Detto questo, siccome la precedente suddivisione aveva il principale scopo di introdurre le principali specie di intervalli, diciamo che va bene lasciare cos&igrave;.
+		</p>
+		<p>Si possono avere intervalli di distanza maggiore di quelli aumentati (minore di quelli diminuiti) e sono i seguenti scritti in ordine crescente (decrescente)
+		di semitoni in pi&ugrave; (in meno): aumentato (diminuito), pi&ugrave; che aumentato (pi&ugrave; che diminuito), eccedente (deficiente), 
+		pi&ugrave; che eccedente (pi&ugrave; che deficiente), ultra eccedente (ultra deficiente).
+		Qui di seguito verranno elencati tutti i principali intervalli in modo da rendere pi&ugrave; chiara l'idea (per semplicit&agrave; i pedici verranno utilizzati solo quando necessario). 
+		Gli intervalli aumentati e diminuiti nel caso di seconda, terza, sesta o settima possono essere di difficile comprensione se si &egrave; all'inizio di un percorso musicaled di base,
+		per cui se vi sentite di essere in questo caso non soffermatevici troppo sopra, tornate quando questi concetti verranno ripresi con esempi pratici pi&ugrave; esplicativi.
+		Aggiungo infine che il quadro sugli intervalli sar&agrave; completo soltanto una volta che avremo definito le scale, dove capiremo esattamente cosa significhi
+		ad esempio che un intervallo sia maggiore piutosto che minore.
+		</p>
+		<table>
+		<caption><p><strong>Intervalli principali</strong></p></caption>
+		<thead>
+		<tr>
+			<th>Intervallo</th>
+			<th>Specie</th>
+			<th>Esempio</th>
+			<th>Distanza (toni)</th>
+			<th>+</th>
+			<th>Distanza (semitoni)</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr> <!-- inizio unisono -->
+			<td>Unisono</td>
+			<td>Diminuito</td>
+			<td>Do<sub>1</sub>-Do&#9837;<sub>1</sub></td>
+			<td class="center">0</td>
+			<td rowspan="28">+</td>
+			<td class="center">-1</td> 
+		</tr>
+		<tr>
+			<td>Unisono</td> 
+			<td>Giusto</td>
+			<td>Do<sub>1</sub>-Do<sub>1</sub></td>
+			<td class="center">0</td>
+			<td class="center">0</td>
+		</tr> 
+		<tr>
+			<td>Unisono</td> 
+			<td>Aumentato</td>
+			<td>Do<sub>1</sub>-Do&#9839;<sub>1</sub></td>
+			<td class="center">0</td>
+			<td class="center">1</td> 
+		</tr> <!-- fine unisono -->
+		<tr> <!-- inizio seconda -->
+			<td>Seconda</td>
+			<td>Diminuita</td>
+			<td>Do-Re&#x1d12b;</td>
+			<td class="center">0</td>
+			<td class="center">0</td> 
+		</tr>
+		<tr>
+			<td>Seconda</td>
+			<td>Minore</td>
+			<td>Do-Re&#9837;</td>
+			<td class="center">0</td>
+			<td class="center">1</td>
+		</tr> 
+		<tr>
+			<td>Seconda</td>
+			<td>Maggiore</td>
+			<td>Do-Re</td>
+			<td class="center">1</td>
+			<td class="center">0</td>
+		</tr> 
+		<tr>
+			<td>Seconda</td>
+			<td>Aumentata</td>
+			<td>Do-Re&#9839;</td>
+			<td class="center">1</td>
+			<td class="center">1</td>
+		</tr> <!-- fine seconda -->
+		<tr> <!-- inizio terza -->
+			<td>Terza</td>
+			<td>Diminuita</td>
+			<td>Do-Mi&#x1d12b;</td>
+			<td class="center">1</td>
+			<td class="center">0</td> 
+		</tr>
+		<tr>
+			<td>Terza</td>
+			<td>Minore</td>
+			<td>Do-Mi&#9837;</td>
+			<td class="center">1</td>
+			<td class="center">1</td>
+		</tr> 
+		<tr>
+			<td>Terza</td>
+			<td>Maggiore</td>
+			<td>Do-Mi</td>
+			<td class="center">2</td>
+			<td class="center">0</td>
+		</tr> 
+		<tr>
+			<td>Terza</td>
+			<td>Aumentata</td>
+			<td>Do-Mi&#9839;</td>
+			<td class="center">2</td>
+			<td class="center">1</td>
+		</tr> <!-- fine terza -->
+		<tr> <!-- inizio quarta -->
+			<td>Quarta</td>
+			<td>Diminuita</td>
+			<td>Do-Fa&#9837;</td>
+			<td class="center">2</td>
+			<td class="center">0</td> 
+		</tr>
+		<tr>
+			<td>Quarta</td> 
+			<td>Giusta</td>
+			<td>Do-Fa</td>
+			<td class="center">2</td>
+			<td class="center">1</td>
+		</tr> 
+		<tr>
+			<td>Quarta</td> 
+			<td>Aumentata<sup><strong>*</strong></sup></td>
+			<td>Do-Fa&#9839;</td>
+			<td class="center">3</td>
+			<td class="center">0</td>
+		</tr> <!-- fine quarta -->
+		<tr> <!-- inizio quinta -->
+			<td>Quinta</td>
+			<td>Diminuita<sup><strong>*</strong></sup></td>
+			<td>Do-Sol&#9837;</td>
+			<td class="center">3</td>
+			<td class="center">0</td> 
+		</tr>
+		<tr>
+			<td>Quinta</td> 
+			<td>Giusta</td>
+			<td>Do-Sol</td>
+			<td class="center">3</td>
+			<td class="center">1</td>
+		</tr> 
+		<tr>
+			<td>Quinta</td> 
+			<td>Aumentata</td>
+			<td>Do-Sol&#9839;</td>
+			<td class="center">4</td>
+			<td class="center">0</td>
+		</tr> <!-- fine quinta -->
+		<tr> <!-- inizio sesta -->
+			<td>Sesta</td>
+			<td>Diminuita</td>
+			<td>Do-La&#x1d12b;</td>
+			<td class="center">3</td>
+			<td class="center">1</td> 
+		</tr>
+		<tr>
+			<td>Sesta</td>
+			<td>Minore</td>
+			<td>Do-La&#9837;</td>
+			<td class="center">4</td>
+			<td class="center">0</td>
+		</tr> 
+		<tr>
+			<td>Sesta</td>
+			<td>Maggiore</td>
+			<td>Do-La</td>
+			<td class="center">4</td>
+			<td class="center">1</td>
+		</tr> 
+		<tr>
+			<td>Sesta</td>
+			<td>Aumentata</td>
+			<td>Do-Re&#9839;</td>
+			<td class="center">5</td>
+			<td class="center">0</td>
+		</tr> <!-- fine sesta -->
+		<tr> <!-- inizio settima -->
+			<td>Settima</td>
+			<td>Diminuita</td>
+			<td>Do-Si&#x1d12b;</td>
+			<td class="center">4</td>
+			<td class="center">1</td> 
+		</tr>
+		<tr>
+			<td>Settima</td>
+			<td>Minore</td>
+			<td>Do-Si&#9837;</td>
+			<td class="center">5</td>
+			<td class="center">0</td>
+		</tr> 
+		<tr>
+			<td>Settima</td>
+			<td>Maggiore</td>
+			<td>Do-Si</td>
+			<td class="center">5</td>
+			<td class="center">1</td>
+		</tr> 
+		<tr>
+			<td>Settima</td>
+			<td>Aumentata</td>
+			<td>Do-Si&#9839;</td>
+			<td class="center">6</td>
+			<td class="center">0</td>
+		</tr> <!-- fine settima -->
+		<tr> <!-- inizio ottava -->
+			<td>Ottava</td>
+			<td>Diminuita</td>
+			<td>Do<sub>1</sub>-Do&#9837;<sub>2</sub></td>
+			<td class="center">5</td>
+			<td class="center">1</td> 
+		</tr>
+		<tr>
+			<td>Ottava</td> 
+			<td>Giusta</td>
+			<td>Do<sub>1</sub>-Do<sub>2</sub></td>
+			<td class="center">6</td>
+			<td class="center">0</td>
+		</tr> 
+		<tr>
+			<td>Ottava</td> 
+			<td>Aumentata</td>
+			<td>Do<sub>1</sub>-Do&#9839;<sub>2</sub></td>
+			<td class="center">6</td>
+			<td class="center">1</td>
+		</tr> <!-- fine ottava -->
+		</tbody>
+		</table>
+		<p><sup><strong>*</strong></sup>L'intervallo di quarta aumentata, come anche l'intervallo di quinta diminuita, 
+		&egrave; un intervallo formato da tre toni, per questo anche detto <strong>tritono</strong>; 
+		ha un proprio nome che lo caratterizza in quanto &egrave; l'intervallo dissonante per eccellenza, tanto che nel Medioevo veniva anche definito "Diabolus in musica".
+		</p>
+		<p>Per concludere introduciamo ora il concetto di <strong>rivolto</strong>: 
+		il rivolto di un intervallo si ottiene invertendo le note in questione e trasponendo la prima (ora diventata la seconda) all'ottava.
+		Facciamo qualche esempio, per ora senza considerare le specie:
+		</p>
+		<ul>
+			<li>Do<sub>1</sub>-Mi<sub>1</sub> --> Mi<sub>1</sub>-Do<sub>2</sub> (quest'ultimo do &egrave; all'ottava rispetto al primo Do);</li>
+			<li>Do<sub>1</sub>-La<sub>1</sub> --> La<sub>1</sub>-Do<sub>2</sub> (anche in questo caso quest'ultimo do &egrave; all'ottava rispetto al primo Do).</li>
+		</ul>
+		<p>L'operazione di rivolto gode di una propriet&agrave; davvero interessante:
+		l'intervallo originale sommato al suo rivolto, entrambi contati numericamente, d&agrave; sempre come risultato 9; inoltre vengono anche "bilanciate" le loro specie,
+		nel senso che se la specie dell'intervallo originale &egrave; maggiore, quella del suo rivolto &egrave; minore e viceversa;
+		se la specie dell'intervallo originale &egrave; giusta, quella del suo rivolto resta giusta; 
+		se la specie dell'intervallo originale &egrave; diminuita, quella del suo rivolto &egrave; aumentata e viceversa.
+		Questo discorso pu&ograve; essere esteso a tutti i tipi di specie.
+		Queste due caratteriche si riassumono affermando che 
+		<strong>l'intervallo originale sommato al suo rivolto, entrambi contati numericamente, d&agrave; sempre come risultato dodici semitoni, ossia l'ampiezza di un'ottava</strong>;
+		questo risultato non dovrebbe sconvolgerci, basti pensare infatti che la nota pi&ugrave; acuta del rivolto dell'intervallo originale 
+		altro non &egrave; che la nota pi&ugrave; grave del primo rivolto per costruzione; &egrave; quindi evidente che gli estremi dell'intervallo originale e del suo rivolto
+		formano un'ottava. l
+		Facciamo nuovamente qualche esempio, questa volta includendo le specie:
+		</p>
+		<ul>
+			<li>Do<sub>1</sub>-Mi<sub>1</sub> (terza maggiore) --> Mi<sub>1</sub>-Do<sub>2</sub> (sesta minore);</li>
+			<li>Do<sub>1</sub>-La<sub>1</sub> (sesta maggiore) --> La<sub>1</sub>-Do<sub>2</sub> (terza minore);</li>
+			<li>Do<sub>1</sub>-Fa<sub>1</sub> (quarta giusta) --> Fa<sub>1</sub>-Do<sub>2</sub> (quinta giusta);</li>
+			<li>Do<sub>1</sub>-Sol&#9839;<sub>1</sub> (quinta aumentata) --> Sol&#9839;<sub>1</sub>-Do<sub>2</sub> (quarta diminuita).</li>			
+		</ul>
+		<p>Questo discorso pu&ograve; essere esteso anche agli intervalli composti (ricordiamo che sono intervalli maggiori dell'ottava),
+		a patto di pensarli nei termini dei loro relativi intervalli semplici, ossia privati dell'ottava;
+		ad esempio l'intervallo di tredicesima (Do<sub>1</sub>-La<sub>2</sub>, che si ottiene come ottava pi&ugrave; sesta) va considerato come sesta (Do<sub>1</sub>-La<sub>1</sub>), 
+		il cui rivolto &egrave; una terza (9 - 6 = 3).
+		Ovviamente per le specie il discorso resta invariato.
+		<h2 id="scale">Le scale</h2>
+		<p>Questa sezione deve ancora essere scritta!
+		</p>
+		</div>
+		<div class="rightnav">
+		<h3 class="indice">Indice:</h3>
+		<ol class="menu-dx">
+			<li><h4><a href="#teoriabase">Teoria di base</a></h4>
+				<ul>
+				<li><a href="#note">Le note</a></li>
+				<li><a href="#intervalli">Gli intervalli</a></li>
+				<li><a href="#scale">Le scale</a></li>
+				</ul>
+			</li>
+		</ol>
+		</div>
+	</div>
+</body>
+</html>

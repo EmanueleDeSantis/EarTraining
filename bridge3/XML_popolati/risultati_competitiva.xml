@@ -1,0 +1,208 @@
+<!-- 
+   EarTraining, a web application for people who want to train their ear for music 
+   Copyright (C) 2020  Emanuele De Santis
+   EarTraining is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   EarTraining is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+   You should have received a copy of the GNU Affero General Public License
+   along with EarTraining.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<lista_utenti xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="risultati_competitiva.xsd">
+  <utente id="2" username="emanuele">
+  	<stagione mese="2020-09">
+      <livello id="1">
+        <successi>60</successi>
+        <tentativi>60</tentativi>
+      </livello>
+      <livello id="2">
+        <successi>30</successi>
+        <tentativi>30</tentativi>
+      </livello>
+      <livello id="3">
+        <successi>17</successi>
+        <tentativi>17</tentativi>
+      </livello>
+  	</stagione>
+  	<stagione mese="2020-10">
+      <livello id="2">
+        <successi>35</successi>
+        <tentativi>35</tentativi>
+      </livello>
+      <livello id="3">
+        <successi>25</successi>
+        <tentativi>25</tentativi>
+      </livello>
+  	</stagione>
+    <stagione mese="2020-11">
+      <livello id="3">
+        <successi>20</successi>
+        <tentativi>20</tentativi>
+      </livello>
+      <livello id="4">
+        <successi>13</successi>
+        <tentativi>13</tentativi>
+      </livello>
+      <livello id="5">
+        <successi>2</successi>
+        <tentativi>2</tentativi>
+      </livello>
+    </stagione>
+  </utente>
+  <utente id="3" username="cacioppo">
+  	<stagione mese="2020-09">
+      <livello id="1">
+        <successi>40</successi>
+        <tentativi>40</tentativi>
+      </livello>
+      <livello id="2">
+        <successi>22</successi>
+        <tentativi>22</tentativi>
+      </livello>
+      <livello id="3">
+        <successi>8</successi>
+        <tentativi>8</tentativi>
+      </livello>
+  	</stagione>
+    <stagione mese="2020-11">
+      <livello id="3">
+        <successi>9</successi>
+        <tentativi>9</tentativi>
+      </livello>
+      <livello id="4">
+        <successi>5</successi>
+        <tentativi>5</tentativi>
+      </livello>
+    </stagione>
+  </utente>
+  <utente id="4" username="christian">
+    <stagione mese="2020-09">
+      <livello id="1">
+        <successi>25</successi>
+        <tentativi>34</tentativi>
+      </livello>
+      <livello id="2">
+        <successi>7</successi>
+        <tentativi>12</tentativi>
+      </livello>
+      <livello id="3">
+        <successi>5</successi>
+        <tentativi>14</tentativi>
+      </livello>
+    </stagione>
+    <stagione mese="2020-10">
+      <livello id="1">
+        <successi>11</successi>
+        <tentativi>16</tentativi>
+      </livello>
+      <livello id="2">
+        <successi>3</successi>
+        <tentativi>5</tentativi>
+      </livello>
+    </stagione>
+  </utente>
+  <utente id="5" username="jake">
+    <stagione mese="2020-09">
+      <livello id="1">
+        <successi>18</successi>
+        <tentativi>23</tentativi>
+      </livello>
+      <livello id="2">
+        <successi>10</successi>
+        <tentativi>17</tentativi>
+      </livello>
+    </stagione>
+    <stagione mese="2020-11">
+      <livello id="1">
+        <successi>14</successi>
+        <tentativi>17</tentativi>
+      </livello>
+      <livello id="2">
+        <successi>8</successi>
+        <tentativi>12</tentativi>
+      </livello>
+      <livello id="3">
+        <successi>2</successi>
+        <tentativi>5</tentativi>
+      </livello>
+    </stagione>
+  </utente>
+  <utente id="6" username="matteo">
+    <stagione mese="2020-09">
+      <livello id="1">
+        <successi>4</successi>
+        <tentativi>7</tentativi>
+      </livello>
+      <livello id="2">
+        <successi>6</successi>
+        <tentativi>9</tentativi>
+      </livello>
+      <livello id="3">
+        <successi>0</successi>
+        <tentativi>3</tentativi>
+      </livello>
+    </stagione>
+    <stagione mese="2020-10">
+      <livello id="2">
+        <successi>36</successi>
+        <tentativi>56</tentativi>
+      </livello>
+      <livello id="3">
+        <successi>7</successi>
+        <tentativi>14</tentativi>
+      </livello>
+      <livello id="4">
+        <successi>0</successi>
+        <tentativi>2</tentativi>
+      </livello>
+    </stagione>
+  </utente>
+  <utente id="8" username="gianluca">
+    <stagione mese="2020-09">
+      <livello id="1">
+        <successi>19</successi>
+        <tentativi>44</tentativi>
+      </livello>
+      <livello id="2">
+        <successi>8</successi>
+        <tentativi>23</tentativi>
+      </livello>
+    </stagione>
+    <stagione mese="2020-10">
+      <livello id="1">
+        <successi>11</successi>
+        <tentativi>16</tentativi>
+      </livello>
+      <livello id="2">
+        <successi>5</successi>
+        <tentativi>9</tentativi>
+      </livello>
+    </stagione>
+  </utente>
+  <utente id="9" username="patrizio">
+    <stagione mese="2020-10">
+      <livello id="1">
+        <successi>6</successi>
+        <tentativi>10</tentativi>
+      </livello>
+    </stagione>
+  </utente>
+  <utente id="11" username="giulia">
+    <stagione mese="2020-11">
+      <livello id="1">
+        <successi>9</successi>
+        <tentativi>17</tentativi>
+      </livello>
+      <livello id="2">
+        <successi>1</successi>
+        <tentativi>5</tentativi>
+      </livello>
+    </stagione>
+  </utente>
+</lista_utenti>

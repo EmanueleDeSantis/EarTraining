@@ -1,0 +1,82 @@
+/*
+   EarTraining, a web application for people who want to train their ear for music 
+   Copyright (C) 2020  Emanuele De Santis
+   EarTraining is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   EarTraining is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+   You should have received a copy of the GNU Affero General Public License
+   along with EarTraining.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+.icons {
+	font-size: 1.9rem;
+}
+
+.icons i {
+	color: white;
+}
+
+#stato {
+	background-color: #FF6300; /* arancione */
+    border-bottom: 0.3rem solid #6B5B95; /* viola scuro */
+}
+	
+.topnav {
+	background-color: black;
+	border-radius: 0.6rem;
+	margin: 0 0.06em 0 0.06rem; /* su dx giù sx */
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+    font-family: verdana;
+    font-size: 0.75rem;
+    margin: 0 27% 0 27%; /* su dx giù sx */
+    padding: 0;
+    list-style: none;
+	text-align: center; 
+	background-color: #1e272e; /* black pearl */
+	border-radius: 1.9rem; 
+	box-shadow: 0 0 0.6rem 0.6rem black; /* su dx giù sx */
+	border: 0.2rem groove #1E90FF; /*dodger blue */
+	line-height: 2.5rem;
+}
+.menu li {
+    background-color: #6B5B95; /* viola scuro */
+    border-bottom: 0.3rem solid #FF6300; /* arancione */
+    width: 11rem;
+    height: 2.5rem;
+	margin: 0.2rem;
+	border-radius: 1.9rem;
+	box-sizing: content-box;
+}
+
+.menu a {	
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    height: 2.5rem;
+    text-align: center;
+}
+
+.menu li:hover {
+	background-color: #FF6300; /* arancione */
+    border-bottom: 0.3rem solid #6B5B95; /* viola scuro */
+	animation: cambia-colore 2s alternate infinite; 
+}
+
+@keyframes cambia-colore {
+	0% {border-bottom-color: #6B5B95;} /* viola scuro */
+	50% {border-bottom-color: #00FFFF;} /* acqua */
+	100% {border-bottom-color: white;}
+}
+
+.menu a:hover, .icons i:hover {
+	color: #ccff99; /* verde chiaro */
+}

@@ -1,0 +1,155 @@
+/*
+   EarTraining, a web application for people who want to train their ear for music 
+   Copyright (C) 2020  Emanuele De Santis
+   EarTraining is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   EarTraining is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+   You should have received a copy of the GNU Affero General Public License
+   along with EarTraining.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+@import "topnav.css";
+@import "leftnav.css";
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #F0E68C; /* giallo khaki */
+}
+
+.container {
+	display: flex; 
+}
+
+.rightnav { 
+	position: sticky; 
+	top: 0; 
+	width: 13%;
+	height: max-content; 
+	border: 0.2rem groove #1E90FF; /*DodgerBlue*/
+	background-color: #c8f2cf; /* verde chiaro */
+	border-radius: 0.2rem;
+}
+
+.menu-dx { 
+	margin: 1rem 1.2rem 2rem 1.2rem; /* su dx giù sx */
+	padding: 0;  
+}
+
+.indice {
+	text-align: center;
+	color: blue;
+}
+
+.menu-dx h4 a {
+	color: red;
+}	
+
+.menu-dx h4 a:hover {
+	color: blue;
+}
+
+.menu-dx li ul {
+	padding-left: 1.5rem;
+} 
+
+.menu-dx li ul li {
+	list-style: none; 
+	color: blue;
+} 
+
+.menu-dx li ul li::before {
+  content: "\266A";
+  color: #008b00; /* verde scuro */
+  font-weight: bold;
+  display: inline-block; 
+  width: 1rem;
+  margin-left: -1rem; 
+}
+
+.menu-dx li ul a:hover {
+	color: #ff7514; /* orange */ 
+}
+
+.main {
+	width: 72%; 	
+	font-family: verdana;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+	text-align: center;
+}  
+
+.blue {
+	color: blue;
+}	
+
+h1, h2 {
+	color: red;
+}	
+
+.immagine {
+	display: block;
+	width: 72%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.doppiodiesis {
+	width: 0.7rem;
+	vertical-align: middle;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+/* codice per avere liste ordinate all'interno di liste */
+.menu-numerato-ol {
+	/* Setta "mycounter" a 0 */
+	counter-reset: mycounter;
+}
+
+.menu-numerato-ul {
+	/* setta "mycounter" a 0 */
+	counter-reset: mycounter;
+}
+
+.menu-numerato-ul ul li, .menu-numerato-ol ul li {
+	list-style-type: none;
+}
+
+.menu-numerato-ol ul li::before, .menu-numerato-ul ul li::before {
+  /* incrementa "mycounter" di 1 */
+	counter-increment: mycounter;
+	content: counter(mycounter) ". ";
+}
+/* fine codice */
+	
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border: 0.2rem groove #1E90FF; /*dodger blue */
+}
+
+th {
+	border: 0.2rem groove #1E90FF; /*dodger blue */
+	padding: 0.5rem;
+}
+
+td {
+	border: 0.1rem solid black;
+	padding: 0.5rem;
+}
+
+
+
+

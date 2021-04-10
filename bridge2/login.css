@@ -1,0 +1,253 @@
+/*
+   EarTraining, a web application for people who want to train their ear for music 
+   Copyright (C) 2020  Emanuele De Santis
+   EarTraining is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   EarTraining is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+   You should have received a copy of the GNU Affero General Public License
+   along with EarTraining.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+@import "../MySite/topnav.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-image: url('login.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.topnav {
+    background-color: transparent;
+}
+
+.main {
+    text-align: center;
+    border: 0.5rem outset lightblue;
+    border-radius: 1.5rem;
+    margin-top: 8vmax;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;    
+}
+
+form {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    color: red;
+    font-size: 2.5rem;
+}
+
+.input-div {
+    display: grid;
+    grid-template-columns: 10% 90%; /* campo dati suddiviso in icona + input */
+    margin: 1.5rem 0;
+    padding: 0.3rem 0;
+    border-bottom: 0.13rem solid #d9d9d9; /* grigio chiaro */
+}
+
+.icone {
+    color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone i {
+    transition: 0.3s;
+}
+
+.input-div.username {
+    margin-top: 1rem;
+}
+
+.input-div > div {
+    position: relative;
+    height: 2.8rem;
+}
+
+.input-div > div > h5 {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: yellow;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.input-div:focus-within {
+    border-bottom: 0.13rem solid #38d39f; /* verde acqua */
+}
+
+.input-div:focus-within > div > h5, input:not(:placeholder-shown) + h5 { /* serve a far alzare le scritte */
+    top: -0.3rem;
+    font-size: 1.05rem;
+}
+
+.input-div:focus-within > div > i {
+    color: #38d39f; /* verde acqua */
+}
+
+.input-div > div > input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.4rem;
+    color: white;
+    font-family: 'garamond';
+    z-index: 1; /* serve per poter cliccare anche sulle scritte (aumentando la prioritÃ  dell'input) */
+}
+
+main > input {
+    width: 75%;
+}
+
+.login {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    border-radius: 1.5rem;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f); /* varie tonalitÃ  di verde acqua */
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'garamond';
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 2.5rem;
+}
+
+.login:hover {
+    background-position: right;
+}
+
+p {
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.container > p {
+    position: absolute;
+    top: 9.5vmax;
+    left: 50%; /* serve per centrare gli avvisi */
+    transform: translate(-50%, -50%); /* serve per centrare gli avvisi */
+}
+
+.registrazione, .recupero_password {
+    outline: none;
+}
+
+.registrati, .recupero_password {
+    display: inline-block;
+    line-height: 3rem; /* uguale all'altezza per centrare la scritta verticalmente*/
+    text-decoration: none;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3rem;
+    border-radius: 1.5rem;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f); /* varie tonalitÃ  di verde acqua */
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'garamond';
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.registrati:hover, .recupero_password:hover {
+    background-position: right;
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+	html, body {
+        background-image: url('mediascreen-login.jpg');
+    }
+
+    .main {
+        margin-top: 9vmax;
+        width: 65%;
+    }
+}
+
+@media screen and (max-aspect-ratio: 4/5) {
+	.container > p {
+    	top: 8.5vmax;
+    }
+}
+
+@media screen and (max-aspect-ratio: 3/4) {
+	.container > p {
+    	/*top: 9vmax;*/
+    }
+}
+
+@media screen and (max-aspect-ratio: 2/3) {
+	html, body {
+        background-image: url('mediascreen-login.jpg');
+    }
+
+    .main {
+        margin-top: 18vmax;
+        width: 65%;
+    }
+
+    .container > p {
+    	top: 12vmax;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+	.container > p {
+    	top: 8vmax;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+	.container > p {
+    	top: 7.5vmax;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+	.container > p {
+    	top: 7vmax;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+	.container > p {
+    	top: 6.5vmax;
+    }
+}

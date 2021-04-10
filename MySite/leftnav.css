@@ -1,0 +1,129 @@
+/*
+   EarTraining, a web application for people who want to train their ear for music 
+   Copyright (C) 2020  Emanuele De Santis
+   EarTraining is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   EarTraining is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+   You should have received a copy of the GNU Affero General Public License
+   along with EarTraining.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+.leftnav {
+	position: sticky; 
+	top: 0; 
+	text-align: center;  
+	width: 13%; 
+	height: max-content; 
+	border: 0.2rem groove #1E90FF; /*dodger blue*/
+	background-color: #DDFFFF; /* celeste chiaro */
+	border-radius: 0.2rem;
+}
+
+.menu-sx { 	
+	margin: 4rem 0.6rem 6rem 0.6rem; /* su giù dx sx; */
+	padding: 0;    
+}
+
+.menu-sx .link {
+	color: black;
+	padding: 0.75rem;    
+	margin: 0; 	
+	display: flex;
+	justify-content: center;
+}
+
+.menu-sx a {
+	text-decoration: none;
+	padding: 0.6rem; 
+	transition: transform 1s ease;
+}
+
+.menu-sx a:hover {
+	background-color: #cc94ff; /* viola */
+	color: white;
+	border-radius: 0.6rem;
+	transform: translateX(15%);
+}
+
+
+.menu-sx #state {
+	background-color: orange; /* viola */
+	color: white;
+	border-radius: 0.6rem;
+}
+
+.hr-sx { 
+	display: flex;
+	justify-content: center;
+	border-radius: 0.2rem;
+}
+
+#hr1 {
+	animation: arcobaleno1 7s reverse infinite;
+}
+
+#hr2 {
+	animation: arcobaleno2 7s reverse infinite; 
+}
+
+#hr3 {
+	animation: arcobaleno3 7s reverse infinite; 
+}
+
+#hr4 {
+	animation: arcobaleno4 7s reverse infinite; 
+}
+
+@keyframes arcobaleno1 {
+	0%, 100% {border: 0.22rem solid #FF0000;} /* red */
+	14.28% {border: 0.22rem solid #FF7F00;} /* orange */
+	28.57% {border: 0.22rem solid #FFFF00;} /* yellow */
+	42.86% {border: 0.22rem solid #00FF00;} /* green */
+	57.14% {border: 0.22rem solid #0000FF;} /* blue */
+	71.43% {border: 0.22rem solid #4B0082;} /* indigo */
+	85.71% {border: 0.22rem solid #9400D3;} /* violet */
+}
+
+@keyframes arcobaleno2 {
+	0%, 100% {border: 0.22rem solid #FF7F00;} /* orange */
+	14.28% {border: 0.22rem solid #FFFF00;} /* yellow */
+	28.57% {border: 0.22rem solid #00FF00;} /* green */
+	42.86% {border: 0.22rem solid #0000FF;} /* blue */
+	57.14% {border: 0.22rem solid #4B0082;} /* indigo */
+	71.43% {border: 0.22rem solid #9400D3;} /* violet */
+	85.71% {border: 0.22rem solid #FF0000;} /* red */
+}
+
+@keyframes arcobaleno3 {
+	0%, 100% {border: 0.22rem solid #FFFF00;} /* yellow */
+	14.28% {border: 0.22rem solid #00FF00;} /* green */
+	28.57% {border: 0.22rem solid #0000FF;} /* blue */
+	42.86% {border: 0.22rem solid #4B0082;} /* indigo */
+	57.14% {border: 0.22rem solid #9400D3;} /* violet */
+	71.43% {border: 0.22rem solid #FF0000;} /* red */
+	85.71% {border: 0.22rem solid #FF7F00;} /* orange */
+}
+
+@keyframes arcobaleno4 {
+	0%, 100% {border: 0.22rem solid #00FF00;} /* green */
+	14.28% {border: 0.22rem solid #0000FF;} /* blue */
+	28.57% {border: 0.22rem solid #4B0082;} /* indigo */
+	42.86% {border: 0.22rem solid #9400D3;} /* violet */
+	57.14% {border: 0.22rem solid #FF0000;} /* red */
+	71.43% {border: 0.22rem solid #FF7F00;} /* orange */
+	85.71% {border: 0.22rem solid #FFFF00;} /* yellow */
+}
+	
+@media only screen and (max-width: 1200px) {
+	.menu-sx a:hover {
+		transform: translateX(0%);
+	}
+}
+
+
+

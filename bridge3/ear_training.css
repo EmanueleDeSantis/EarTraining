@@ -1,0 +1,274 @@
+/*
+   EarTraining, a web application for people who want to train their ear for music 
+   Copyright (C) 2020  Emanuele De Santis
+   EarTraining is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   EarTraining is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+   You should have received a copy of the GNU Affero General Public License
+   along with EarTraining.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+@import "../MySite/topnav.css";
+@import "../MySite/leftnav.css";
+@import "../bridge2/logout.css";
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #F0E68C; /* giallo khaki */
+}
+
+.container {
+	display: flex;
+}
+
+.rightnav {
+	width: 86.5%;
+	/*display: flex;*/
+	position: absolute; 
+	top: 5rem;
+	right: 0; 
+	border: none;
+	text-align: center;
+	background-color: transparent;
+}
+
+.cont {
+	display: flex;
+}
+
+.rcont-dx, .rcont-sx {
+	width: 100%;
+}
+
+.titolo {
+	display: inline-flex;
+	align-items: center;
+}
+
+.titolo > a {
+	text-decoration: none;
+}
+
+.main {
+	margin-top: 21rem;
+	margin-right: auto;
+	text-align: center;
+	font-size: 1.25rem;
+	width: 72%; 	
+	font-family: verdana;
+}
+
+.main input {
+	font-size: 1.25rem;
+}
+
+.main input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+h1 {
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	color: red;
+}
+
+.risultati {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	color: blue;
+}
+
+form {
+	display: block;
+	margin-top: 1.5rem;
+	/*width: 100%;*/
+}
+
+form span {
+    font-size: 1.25rem;
+}
+
+.ris-form form {
+	display: inline-block;
+}
+
+.div-ris {
+	font-size: 1.15rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border: 0.2rem groove #1E90FF; /*dodger blue */
+	display: table;
+}
+
+.div-ris.personali {
+	background-color: #c8f2cf;
+}
+
+.div-ris.globali {
+	background-color: mintcream;
+}
+
+.div-ris .div-tbody, {
+	display: block;
+    width: 100%;
+}
+
+.div-ris .div-thead, .div-ris .div-tbody .div-tr {
+	display: table;
+}
+
+.div-ris .div-tbody {
+    /*overflow-y: overlay;*/ /* su chrome è l'ideale */
+    overflow-y: scroll; /* da usare se si usa fiefox, ma anche se la tabella non ha necessità di scrolling si vede comunque la barra laterale */
+}
+
+.div-ris .div-td {
+	border: 0.1rem groove #1E90FF;
+	border-bottom: none;
+}
+
+.div-ris .div-td, .div-ris .div-th {
+	display: table-cell;
+	padding: 0.5rem;
+}
+
+.div-ris .div-td:first-child {
+	border-left: none;
+}
+
+.div-ris .div-td:last-child {
+	border-right: none;
+}
+
+.div-ris.personali .div-tbody {
+	max-height: 9.5rem;
+}
+
+.div-ris.personali .div-td, .div-ris.personali .div-th {
+	width: 5.5rem;
+}
+
+.div-ris.globali .div-tbody {
+	max-height: 33rem;
+}
+
+.div-ris.globali .div-td, .div-ris.globali .div-th {
+	width: 7.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-aspect-ratio: 3/4) {
+    .div-ris.globali .div-tbody {
+		max-height: 15rem;
+	}
+}
+
+@media only screen and (max-aspect-ratio: 1/2) {
+    .div-ris.globali .div-tbody {
+		max-height: 69rem;
+	}
+}
+
+@media only screen and (max-aspect-ratio: 2/3) {
+	.cont {
+		display: unset;
+	}
+
+    .main {
+    	width: 100%;
+        margin-top: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .leftnav {
+    	z-index: 1;
+    	position: fixed;
+    	top: unset;
+    }
+
+	.rightnav {
+		display: block;
+		width: 100%;
+		border: none;
+		text-align: center;
+		background-color: transparent;
+	}
+
+	.rcont-sx, .rcont-dx {
+		position: relative;
+		right: unset;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.div-ris {
+		font-size: 1.25rem;
+	}
+
+	.div-ris.personali .div-td, .div-ris.personali .div-th {
+		width: 8rem;
+	}
+
+	.div-ris.personali .div-tbody {
+		max-height: 10rem;
+	}
+}
+
+@media only screen and (min-width: 1900px) {
+	.cont {
+		display: unset;
+	}
+	
+	.main {
+        margin-top: 0;
+        margin-left: auto;
+        width: 50%;
+    }
+
+    .leftnav {
+    	position: fixed;
+    	top: unset;
+    }
+
+	.rightnav {
+		width: auto;
+		display: block;
+		position: absolute; 
+		top: unset;
+		right: 0; 
+		border: none;
+		text-align: center;
+		background-color: transparent;
+	}
+
+	.rcont-sx, .rcont-dx {
+		position: relative;
+		right: unset;
+		left: unset;
+	}
+
+	.div-ris {
+		font-size: 1.25rem;
+	}
+
+	.div-ris.personali .div-td, .div-ris.personali .div-th {
+		width: 6rem;
+	}
+
+	.div-ris.personali .div-tbody {
+		max-height: 10rem;
+	}
+}

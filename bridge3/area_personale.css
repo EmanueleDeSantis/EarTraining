@@ -1,0 +1,176 @@
+/*
+   EarTraining, a web application for people who want to train their ear for music 
+   Copyright (C) 2020  Emanuele De Santis
+   EarTraining is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   EarTraining is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+   You should have received a copy of the GNU Affero General Public License
+   along with EarTraining.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+@import "../MySite/topnav.css";
+@import "../bridge2/logout.css";
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #F0E68C; /* giallo khaki */
+}
+
+.container {
+	display: flow-root;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.risultati, .risultati-globali, .main {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.risultati {
+	/*width: 75%;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 2rem;
+}
+
+.main {
+	width: 60%;
+}
+
+.risultati h1, .main h1 {
+	color: blue;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.risultati h1 {
+	display: block;
+}
+
+.risultati-globali {
+	margin-bottom: 2rem;
+}
+
+.risultati-globali h1 {
+	color: blue;
+}
+
+.risultati-globali form {
+	display: inline;
+	margin-left: 3rem;
+	/*margin-right: 3rem;*/
+}
+
+.risultati-globali form span {
+	font-size: 1.17rem;
+}
+
+.main > form {
+	text-align: justify;
+	margin-bottom: 1rem;
+}
+
+p {
+	font-size: 1.5rem;
+	color: red;
+	font-weight: bold;
+}
+
+form > div {
+	display: grid;
+	grid-template-columns: 5% 55% 30% 10%;
+	grid-template-rows: 3.5rem;
+	align-items: center;
+}
+
+form input {
+	padding: 0.3rem 0.6rem;
+}
+
+.ris-form.glob form {
+	margin-bottom: 2rem;
+}
+
+.ris-form form {
+	display: inline-block;
+	/*margin-bottom: 1.5rem;*/
+}
+
+.div-ris {
+	font-size: 1.25rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border: 0.2rem groove #1E90FF; /*dodger blue */
+	display: table;
+	background-color: mintcream;
+}
+
+.div-ris.personali {
+	background-color: #c8f2cf;
+}
+
+.div-ris.globali {
+	background-color: mintcream;
+}
+
+.div-ris .div-tbody, {
+	display: block;
+    width: 100%;
+}
+
+.div-ris .div-thead, .div-ris .div-tbody .div-tr {
+	display: table;
+}
+
+.div-ris .div-tbody {
+    /*overflow-y: overlay;*/ /* su chrome è l'ideale */
+    overflow-y: scroll; /* da usare se si usa fiefox, ma anche se la tabella non ha necessità di scrolling si vede comunque la barra laterale */
+}
+
+.div-ris .div-td {
+	border: 0.1rem groove #1E90FF;
+	border-bottom: none;
+}
+
+.div-ris .div-td, .div-ris .div-th {
+	display: table-cell;
+	padding: 0.5rem;
+}
+
+.div-ris .div-td:first-child {
+	border-left: none;
+}
+
+.div-ris .div-td:last-child {
+	border-right: none;
+}
+
+.div-ris .div-tbody {
+	max-height: 10rem;
+}
+
+.div-ris .div-td, .div-ris .div-th {
+	width: 5.5rem;
+}
+
+@media only screen and (max-width: 1300px) {
+	.main {
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+	.div-ris .div-td, .div-ris .div-th {
+		width: 8rem;
+	}
+}

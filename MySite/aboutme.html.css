@@ -1,0 +1,114 @@
+/*
+   EarTraining, a web application for people who want to train their ear for music 
+   Copyright (C) 2020  Emanuele De Santis
+   EarTraining is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   EarTraining is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+   You should have received a copy of the GNU Affero General Public License
+   along with EarTraining.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+@import "topnav.css";
+
+.topnav {
+	background-color: transparent;
+} /* ovverride background topnav color */
+
+body, html {
+	margin: 0rem;
+	padding: 0rem;
+	animation: sfondo 10s alternate-reverse infinite;
+}
+
+@keyframes sfondo {
+	0%, 100% {background: #ccffff}
+    50% {background: #ccffcc}
+}
+
+.chisono {
+	height: auto;
+	width: 50%;
+	border-top: 0.5rem inset yellow; 
+	border-bottom: 0.5rem inset green;
+	border-left: 0.5rem inset red;
+	border-right: 0.5rem inset #1E90FF; /* dodger blue */
+	margin-top: 0vh;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.5rem; 
+	vertical-align: middle;
+	animation: bordo 4s normal infinite;
+}
+
+@keyframes bordo {
+	0%, 100% {border-top: 0.5rem inset yellow; border-left: 0.5rem inset red; border-bottom: 0.5rem inset green; border-right: 0.5rem inset #1E90FF;} /* dodger blue */
+	25% {border-top: 0.5rem inset #1E90FF; border-left: 0.5rem inset yellow; border-bottom: 0.5rem inset red; border-right: 0.5rem inset green;} 
+	50% {border-top: 0.5rem inset green; border-left: 0.5rem inset #1E90FF; border-bottom: 0.5rem inset yellow; border-right: 0.5rem inset red;} 
+	75% {border-top: 0.5rem inset red; border-left: 0.5rem inset green; border-bottom: 0.5rem inset #1E90FF; border-right: 0.5rem inset yellow;} 
+}
+
+h1 {
+	margin-top: 5vh;
+	text-align: center;
+	font-size: 5vh;
+	color: red;
+}
+
+p {
+	font-size: 1.5vmax;
+}
+
+.immagini {
+	position: absolute; 
+	top: 38vh; 
+	width: 100%;  
+	height: 0%;  
+} 
+
+.immag-ul {  
+	padding: 0rem;     
+	margin: 0rem;  
+	list-style: none; 
+	height: 0%;
+}  
+
+.anim {
+	height: 0%;
+}
+
+.img-sx { 
+	width: 13.5vw; 
+ } 
+
+.img-dx { 
+	width: 13.5vw; 
+	float: right;
+}
+
+.immagini li:hover .img-sx {
+	animation: scambio-sx 1.2s forwards;  
+	
+}
+
+.immagini li:hover .img-dx {
+	animation: scambio-dx 1.2s forwards;
+}
+	
+@keyframes scambio-sx {
+	0% {transform: translateX(0%);}
+	33.33% {transform: translateX(13.5vw); opacity: 0;}
+	66.67% {transform: translateX(72vw); opacity: 0;}
+	100% {transform: translateX(86.5vw); opacity: 1;}
+}
+
+@keyframes scambio-dx {
+	0% {transform: translateX(0%);}
+	33.33% {transform: translateX(-13.5vw); opacity: 0;}
+	66.67% {transform: translateX(-72vw); opacity: 0;}
+	100% {transform: translateX(-86.5vw); opacity: 1;}
+}
