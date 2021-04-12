@@ -9,4 +9,4 @@ Per installare e popolare l'applicazione, andare al seguente uri: `http://il_tuo
 Consultare il file "EarTraining.docx"
 
 ## Riferimenti
-L'applicazione è attualmente funzionante al seguente link: http://musicskills.altervista.org/
+L'applicazione è attualmente funzionante al seguente url: http://musicskills.altervista.org/
