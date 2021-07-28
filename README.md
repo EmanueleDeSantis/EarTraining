@@ -6,7 +6,7 @@ Per testare in locale, modificare correttamente, dove richiesto, i file `bridge2
 Per installare e popolare l'applicazione, andare al seguente uri: `http://il_tuo_host/bridge2/install.php`
 
 ## Documentazione
-Consultare il file "EarTraining.docx"
+Consultare il file "EarTraining.pdf"
 
 ## Riferimenti
 L'applicazione è attualmente funzionante al seguente url: http://musicskills.altervista.org
